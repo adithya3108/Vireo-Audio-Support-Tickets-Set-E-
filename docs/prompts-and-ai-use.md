@@ -67,6 +67,6 @@ The output is forced to `{"category": <one of 11>, "reason": str}` with a JSON s
 
 ## Cost
 
-- **Claude Code usage:** *fill in from your plan or usage page*.
+- **Claude Code usage:** covered by a Claude Pro subscription (flat monthly fee); this task used about 23% of the weekly allowance.
 - **API spend:** Rs 0. The `--llm` path was not run.
 - **The shipped tool costs nothing to run.**

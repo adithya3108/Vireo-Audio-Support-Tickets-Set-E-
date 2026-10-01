@@ -4,7 +4,7 @@
 - **Email:** adithyapr3104@gmail.com
 - **Time spent:** 4 hours
 
-Answers below follow the form's questions in order, ready to paste. Items marked **[TO FILL]** still need you.
+Answers below follow the form's questions in order.
 
 ---
 
@@ -106,7 +106,7 @@ I chose to spend the time instead on the held-out set and the independent cross-
 - The lot-code analysis.
 - An 11-colour stacked chart.
 
-**AI cost:** Claude Code [TO FILL]. API spend Rs 0.
+**AI cost:** Covered by my existing Claude Pro subscription (flat monthly fee, no per-use charge); this task used about 23% of my weekly Pro allowance. No paid API calls: API spend Rs 0. Running the tool costs Rs 0.
 
 **Recording:** https://drive.google.com/file/d/11pp3aRal142B_P8Ql0NVDHPycQfWNo7u/view?usp=sharing
 
