@@ -1,0 +1,107 @@
+VIREO AUDIO â€” SUPPORT DATA PACK
+================================
+
+tickets.csv          Support tickets, 1 Jan 2025 â€“ 30 Jun 2026. One row per ticket as exported.
+                     Timestamps are as displayed in the helpdesk (IST).
+  ticket_id            Helpdesk ticket number
+  created_at           Ticket creation
+  first_response_at    First human agent reply
+  resolved_at          Resolution (blank if open/pending). For legacy tickets this was
+                       reconstructed from the event log.
+  status               resolved | closed (auto-closed, no customer reply) | open | pending
+  channel              chat | email | voice | social
+  customer_id          Key into customers.csv
+  order_id             Key into orders.csv. Blank when the customer did not quote it.
+                       customer_id + product_sku is the fallback join.
+  product_sku          Key into products.csv
+  category             Category tag set by the intake bot at creation; agents may re-tag on closure
+  priority             Low | Normal | High
+  assigned_team        Team the ticket was first routed to
+  agent_id             Agent who resolved the ticket. Key into agents.csv. Use the id, not the name.
+  transfers            Number of hand-offs between teams. Field exists only in the current helpdesk; blank on legacy rows.
+  csat_score           1â€“5 survey score. Blank = no response.
+  refund_amount_inr    Refund raised on the ticket, as exported by each system. Blank = none.
+  refund_reason_code   Dropdown code selected by the agent (see support-policy.pdf Â§5)
+  replacement_issued   Y/N flag set by the agent
+  customer_message     Customer's opening message (chat/email/social) or IVR transcript (voice)
+  agent_notes          Agent's closing note
+  source_system        helpdesk | legacy_fd (migrated from Freshdesk, see support-policy.pdf Â§9)
+
+agents.csv           Roster. One row per assignment (agent_id, name, site, team, shift, tier,
+                     from_date, to_date). An agent can have more than one row.
+orders.csv           Orders: order_id, customer_id, sku, order_date, channel, qty,
+                     order_value_inr, lot_code (manufacturing lot printed on the box).
+customers.csv        customer_id, name, city, state, signup_date, care_plus (Y/N).
+products.csv         sku, product_name, family, launch_date, unit_cost_inr, retail_price_inr,
+                     warranty_months.
+support-policy.pdf   Vireo's support operating policy v3.2 â€” SLAs, costs, refund rules, shifts,
+                     definitions.
+email-thread.txt     Messages already exchanged between Vireo and us about this work.
+
+No other documentation is available.
+
+
+
+EMAIL THREAD â€” Vireo Audio â€” support tickets (Set E)
+Messages exchanged before this pack was sent. Provided as-is.
+========================================================================
+
+From: Priya Raman, Head of Customer Experience, Vireo Audio
+To: Kabir Nanda, Account Lead (our side)
+Cc: Arjun Mehta; Neha Kulkarni; Sameer Qureshi
+Date: Mon 7 Sep 2026, 09:35
+Subject: Headcount chart
+
+Kabir - monthly volume by category and by team. Two hires go to whichever team is
+biggest. I've already half-promised them to Billing, so this is mostly confirmation, but
+let's do it properly.
+
+------------------------------------------------------------------------
+
+From: Sameer Qureshi, Helpdesk Administrator (IT), Vireo Audio
+To: Kabir Nanda, Account Lead (our side)
+Cc: Priya Raman; Arjun Mehta; Neha Kulkarni
+Date: Mon 7 Sep 2026, 15:20
+Subject: Re: Headcount chart
+
+Exports attached. The category is set by the chat bot from its opening question at
+ticket creation; agents can re-tag but in practice rarely do. The transfers field did
+not exist in Freshdesk so it's blank on pre-migration rows - blank, not zero. Two agents
+share a display name, use agent_id. Timestamps as displayed in the helpdesk.
+
+------------------------------------------------------------------------
+
+From: Arjun Mehta, Finance Controller, Vireo Audio
+To: Priya Raman, Head of Customer Experience, Vireo Audio
+Cc: Neha Kulkarni; Sameer Qureshi; Kabir Nanda
+Date: Tue 8 Sep 2026, 10:40
+Subject: Re: Headcount chart
+
+Two hires is about Rs 9 lakh a year. I want to see the volume case in writing before I
+sign, and I'd rather fix a process than hire into it if that's an option.
+
+------------------------------------------------------------------------
+
+From: Neha Kulkarni, Support Operations Manager, Vireo Audio
+To: Priya Raman, Head of Customer Experience, Vireo Audio
+Cc: Arjun Mehta; Sameer Qureshi; Kabir Nanda
+Date: Tue 8 Sep 2026, 13:05
+Subject: Re: Headcount chart
+
+Billing keep telling me half their queue isn't theirs, but every team says that about
+their queue. If you ask me it's Logistics who are actually drowning - their resolution
+times are a day plus and they're the ones getting hand-offs from everyone.
+
+------------------------------------------------------------------------
+
+From: Priya Raman, Head of Customer Experience, Vireo Audio
+To: Kabir Nanda, Account Lead (our side)
+Cc: Arjun Mehta; Neha Kulkarni; Sameer Qureshi
+Date: Wed 9 Sep 2026, 08:20
+Subject: Re: Headcount chart
+
+Billing is our biggest queue by a mile, 22% of tickets - Neha, Logistics is barely 16%.
+Two hires there unless the data says otherwise, and I don't expect it to. Chart please,
+monthly, by category and team.
+
+------------------------------------------------------------------------

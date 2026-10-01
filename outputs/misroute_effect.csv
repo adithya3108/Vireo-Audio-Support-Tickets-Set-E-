@@ -1,0 +1,3 @@
+misrouted,tickets,transfers_per_ticket (helpdesk only),sla_breach_rate,median_hours_to_resolve,repeat_contact_rate_30d,avg_csat (responders only)
+Routed correctly,8855,0.107,0.088,1.75,0.04,3.472
+Misrouted,2786,0.366,0.183,4.717,0.055,3.103

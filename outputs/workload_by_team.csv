@@ -1,0 +1,8 @@
+,agents,tickets_per_month_bot_tag,tickets_per_month_actual,median_hours_to_resolve,sla_breach_rate,per_agent_bot_tag,per_agent_actual,share_bot_tag,share_actual
+Logistics,5,122.67,207.33,25.27,0.09,24.53,41.47,0.16,0.27
+Returns Desk,3,64.17,102.67,24.45,0.13,21.39,34.22,0.08,0.13
+Billing,4,150.0,106.83,0.78,0.18,37.5,26.71,0.19,0.14
+Email Frontline,7,125.5,98.67,3.26,0.11,17.93,14.1,0.16,0.13
+Voice Frontline,4,66.67,55.67,1.02,0.04,16.67,13.92,0.09,0.07
+Chat Frontline,15,215.5,173.67,0.55,0.07,14.37,11.58,0.28,0.22
+Escalations & Warranty,6,37.0,36.67,82.27,0.06,6.17,6.11,0.05,0.05

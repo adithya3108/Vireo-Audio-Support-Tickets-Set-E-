@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+outputs/llm_cache.json
+# original pack files; clean copies live in data/
+/*-*-*-*-*-*.csv
+/*-*-*-*-*-support-policy.pdf
