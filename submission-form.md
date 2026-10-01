@@ -108,7 +108,7 @@ I chose to spend the time instead on the held-out set and the independent cross-
 
 **AI cost:** Claude Code [TO FILL]. API spend Rs 0.
 
-**Recording:** [TO FILL: public Google Drive link]
+**Recording:** https://drive.google.com/file/d/11pp3aRal142B_P8Ql0NVDHPycQfWNo7u/view?usp=sharing
 
 ## Someone picks this up on Monday and you are unreachable. The three things they need to know.
 
